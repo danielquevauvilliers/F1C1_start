@@ -3,6 +3,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  /*box-sizing: border-box;*/
 }
 
 .main-content {
@@ -38,6 +39,7 @@ html {
 
 header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
@@ -128,6 +130,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  position: relative;
+  top: 170px;
+  left: 10%;
 }
 
 #sign-up-cta .content {
@@ -225,12 +230,22 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  max-height: 635px;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+}
+
+.feature .content {
+  padding: 40px 0;
 }
 
 .feature h2 {
